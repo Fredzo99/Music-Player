@@ -1,171 +1,82 @@
-<h1 align= center><b>⭐️ Music Player ⭐️</b></h1>
-<h3 align = center> A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls </h3>
+# Music Player
 
-<p align="center">
-<a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
-<br>
-    <img src="https://img.shields.io/github/license/AsmSafone/MusicPlayer?style=for-the-badge" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/AsmSafone/MusicPlayer?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/AsmSafone/MusicPlayer?style=for-the-badge" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/forks/AsmSafone/MusicPlayer?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/stars/AsmSafone/MusicPlayer?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/watchers/AsmSafone/MusicPlayer?style=for-the-badge" alt="Watchers">
-    <img src="https://img.shields.io/github/commit-activity/w/AsmSafone/MusicPlayer?style=for-the-badge" alt="Commit Activity">
-    <img src="https://img.shields.io/github/issues/AsmSafone/MusicPlayer?style=for-the-badge" alt="Issues">
-</p>
+Welcome to the Music Player, a versatile and feature-rich bot programmed in Python that allows you to stream music, videos, YouTube content, and more directly within your chat platform. Whether you're looking for a fast and lightweight solution or cool controls and features, this bot has got you covered.
 
-## ✨ <a name="features"></a>Features
+## ✨ Features
 
 ### ⚡️ Fast & Light
 
-Starts streaming your inputs while downloading and converting them. Also, it
-doesn't make produce files.
+- **Streaming on the Fly**: Starts streaming your inputs while downloading and converting them. It doesn't produce unnecessary files, ensuring efficiency.
 
-### 👮🏻‍♀️ Safe and handy
+### 👮🏻‍♀️ Safe and Handy
 
-Restricts control and sensitive commands to admins.
+- **Admin Restrictions**: Restricts control and sensitive commands to admins, ensuring safe usage.
 
-### 🗑 Clean and spam free
+### 🗑 Clean and Spam-Free
 
-Deletes old playing trash to keep your chats clean.
+- **Automatic Trash Deletion**: Deletes old playing trash to keep your chats clean and clutter-free.
 
-### 😎 Has cool controls
+### 😎 Cool Controls
 
-Lets you switch stream mode, loop, pause, resume, mute, unmute anytime.
+- **Interactive Commands**: Offers cool controls such as switching stream mode, loop, pause, resume, mute, unmute, and more.
 
-### 🖼 Has cool thumbnails
+### 🖼 Cool Thumbnails
 
-Response your commands with cool thumbnails on the chat.
+- **Visual Appeal**: Responds to your commands with cool thumbnails, adding a visual element to your interactions.
 
-### 😉 Streams whatever you like
+### 😉 Streams Whatever You Like
 
-You can stream audio or video files, YouTube videos with any duration,
-YouTube lives, YouTube playlists and even custom live streams like radios or m3u8 links or files in
-the place it is hosted!
+- **Versatile Streaming**: Stream audio or video files, YouTube videos of any duration, YouTube lives, YouTube playlists, and even custom live streams like radios or m3u8 links or files hosted elsewhere.
 
-### 📊 Streams in multiple places
+### 📊 Streams in Multiple Places
 
-Allows you to stream different things in multiple chats simultaneously. Each
-chat will have its own song queue.
+- **Multi-Chat Functionality**: Allows you to stream different content in multiple chats simultaneously, with each chat having its own song queue.
 
-### 🗣 Speaks different languages
+### 🗣 Speaks Different Languages
 
-Music Player is multilingual and speaks [various languages](#languages),
-thanks to the translators.
+- **Multilingual Support**: Music Player is multilingual, thanks to translators who have contributed to support various languages.
 
-## 🚀 <a name="deploy"></a>Deploy
+## Getting Started
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://deploy.safone.tech)
+To use the Music Player, follow these steps:
 
-Note: `First Fork The Repo Then Click On Deploy To Heroku Button!`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Fredzo99/Music-Player.git
+   ```
 
+2. Navigate to the project directory:
+   ```bash
+   cd Music-Player
+   ```
 
-## ☁️ <a name="self_host"></a>Self Host
+3. Follow the setup instructions in the repository to configure and deploy the bot.
 
-- Legecy Method
-```bash
-$ git clone https://github.com/AsmSafone/MusicPlayer
-$ cd MusicPlayer
-$ sudo apt install git curl python3-pip ffmpeg -y
-$ pip3 install -U pip
-$ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-$ sudo apt install -y nodejs
-$ sudo apt install build-essential
-$ sudo npm install pm2@latest -g
-$ pip3 install -U -r requirements.txt
-$ cp sample.env .env
-# < edit .env with your own values >
-$ python3 main.py
-```
-Or you can use this One-Liner to save your time :
+## Contributing
 
-```
-git clone https://github.com/AsmSafone/MusicPlayer && cd MusicPlayer && sudo apt install git curl python3-pip ffmpeg -y && pip3 install -U pip && curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs && sudo apt install build-essential && sudo npm install pm2@latest -g && pip3 install -U -r requirements.txt
-```
-Make sure to edit the .env file accordingly,
-```
-cp sample.env .env
-```
-Run it using,
-```
-python3 main.py
-```
+Feel free to contribute to the Music Player by making edits or commits to enhance functionality or fix bugs. Follow the standard GitHub flow:
 
-- Docker Build Method
-```bash
-$ git clone https://github.com/AsmSafone/MusicPlayer
-$ cd MusicPlayer
-$ cp sample.env .env
-# < edit .env with your own values >
-$ sudo docker build . -t musicplayer
-$ sudo docker run musicplayer
-```
+1. Fork the repository.
+2. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. Create a pull request.
 
-## ⚒ <a name="configs"></a>Configs
+## License
 
-- `API_ID`: Telegram app id from https://my.telegram.org/apps.
-- `API_HASH`: Telegram app hash from https://my.telegram.org/apps.
-- `SESSION`: Pyrogram string session. You can generate from [here](https://replit.com/@AsmSafone/genStr).
-- `SUDOERS`: ID of sudo users (separate multiple ids with space).
-- `BOT_TOKEN`: Telegram bot token from https://t.me/botfather. (optional)
-- `QUALITY`: Custom stream quality (high/medium/low) for the userbot in vc. Default: `high`
-- `PREFIX`: Bot commad prefixes (separate multiple prefix with space). Eg: `! /`
-- `LANGUAGE`: An [available](#languages) bot language (can change it anytime). Default: `en`
-- `STREAM_MODE`: An stream mode like audio or video (can change it anytime). Default: `audio`
-- `ADMINS_ONLY`: Put `True` if you want to make /play commands only for admins. Default: `False`
-- `SPOTIFY_CLIENT_ID`: Spotify client id get it from [here](https://developer.spotify.com/dashboard/applications). (optional)
-- `SPOTIFY_CLIENT_SECRET`: Spotify client secret get it from [here](https://developer.spotify.com/dashboard/applications). (optional)
+This project is licensed under the [MIT License](LICENSE).
 
+## Contact
 
-## 📄 <a name="commands"></a>Commands
+If you have any questions, feedback, or suggestions, feel free to reach out to Fredzo99.
 
-Command | Description
-:--- | :---
-• !ping | Check if alive or not
-• !start / !help | Show the help for commands
-• !mode / !switch | Switch the stream mode (audio/video)
-• !p / !play [song name or youtube link] | Play a song in vc, if already playing add to queue
-• !radio / !stream [radio url or stream link] | Play a live stream in vc, if already playing add to queue
-• !pl / !playlist [playlist link] | Play the whole youtube playlist at once
-• !skip / !next | Skip to the next song
-• !m / !mute | Mute the current stream
-• !um / !unmute | Unmute the muted stream
-• !ps / !pause | Pause the current stream
-• !rs / !resume | Resume the paused stream
-• !list / !queue | Show the songs in the queue
-• !mix / !shuffle | Shuflle the queued playlist
-• !loop / !repeat | Enable or disable the loop mode
-• !lang / language [language code] | Set the bot language in group
-• !ip / !import | Import queue from exported file
-• !ep / !export | Export the queue for import in future
-• !stop / !leave | Leave from vc and clear the queue
-• !update / !restart | Update and restart your music player
-
-## 🗣 <a name="languages"></a>Languages
-
-```text
-en    English
-de    German
-te    Telegu
-```
-
-## 💜 <a name="contribute"></a>Contribute
-
-New languages, bug fixes and improvements following
-[our contribution guidelines](./CONTRIBUTING.md) are warmly welcomed!
-
-## 🛫 <a name="supports"></a>Supports
-
-For any kind of help join [our support group](https://t.me/AsmSupport) or raise an [issue](https://github.com/AsmSafone/MusicPlayer/issues).
-
-## ✨ <a name="credits"></a>Credits
-
-- [Me](https://github.com/AsmSafone) for [Noting](https://github.com/AsmSafone/MusicPlayer) 😬
-- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram) ❤️
-- [Laky-64](https://github.com/Laky-64) for [Py-TgCalls](https://github.com/pytgcalls/pytgcalls) ❤️
-- And Thanks To All [Contributors](https://github.com/AsmSafone/MusicPlayer/graphs/contributors)! ❤️
-
-## 📃 <a name="license"></a>License
-
-Music Player is licenced under the GNU Affero General Public License v3.0.
-Read more [here](./LICENSE).
+Thank you for using the Music Player! 🎶
